@@ -1,6 +1,6 @@
 // Service Worker：預先快取全部遊戲檔案，支援離線遊玩（PWA）。
 // VERSION 與 PRECACHE 由 npm run assets:hash 產生；JS/CSS 查詢參數不可忽略。
-const VERSION = 'sb-92c83f750f2d66a2';
+const VERSION = 'sb-44b7a69ac1fadaa7';
 const PRECACHE = [
   './',
   'index.html',
@@ -26,14 +26,14 @@ const PRECACHE = [
   'src/data/waves.js?cab60c4a7a6d3e19',
   'src/i18n/canvas.js?2262802da3b3c0d5',
   'src/i18n/data.js?1053a0ca29fcf141',
-  'src/i18n/index.js?198c5ac1e54c15bb',
+  'src/i18n/index.js?68305d9a3e4a5d2b',
   'src/i18n/ui.js?a896e84a8a56fe73',
   'src/main.js?b3194363b8efe880',
   'src/pwa.js?75ce8c987a912743',
   'src/render/scene.js?5943e080a7e2de49',
   'src/render/sprites.js?79442e4afc58ad74',
   'src/ui/app.js?fb6e36d6451bed68',
-  'src/ui/sharecard.js?732c28e160a37f07',
+  'src/ui/sharecard.js?96f9d31f50315feb',
 ];
 
 self.addEventListener('install', (event) => {

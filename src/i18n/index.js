@@ -9,7 +9,7 @@ export const LOCALES = {
   ja: { html: 'ja', og: 'ja_JP' },
   ko: { html: 'ko', og: 'ko_KR' },
 };
-const SITE = 'https://starward-bastion.yustellar.dev/';
+const SITE = 'https://starwardbastion.ysgs.app/';
 const META = {
   zh: {
     name: '星域防線 Starward Bastion',

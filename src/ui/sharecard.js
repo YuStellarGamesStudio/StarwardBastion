@@ -142,7 +142,7 @@ export function drawCard(canvas, s, game) {
   ctx.fillStyle = '#5f6d90';
   ctx.font = `500 18px ${FONT}`;
   ctx.textAlign = 'right';
-  ctx.fillText('starward-bastion.yustellar.dev', CARD_W - 56, CARD_H - 40);
+  ctx.fillText('starwardbastion.ysgs.app', CARD_W - 56, CARD_H - 40);
   ctx.textAlign = 'left';
 }
 

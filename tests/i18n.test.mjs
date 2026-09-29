@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { resolveLang, MESSAGES, LOCALES } from '../src/i18n/index.js';
 
-const root = 'https://starward-bastion.yustellar.dev/';
+const root = 'https://starwardbastion.ysgs.app/';
 
 test('網址指定語系優先，其他參數與錨點不影響選擇', () => {
   assert.equal(resolveLang(`${root}?from=share&lang=ko#game`), 'ko');
