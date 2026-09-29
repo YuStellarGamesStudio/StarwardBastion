@@ -55,7 +55,7 @@
 | PWA：manifest、Service Worker 離線快取、安裝按鈕、JS/CSS `?hash` 更新 | ✅ | `tests/pwa.test.mjs`：不同 hash 不命中舊快取、同版本離線可用、首頁網路優先與離線回退。Chromium 保留 sb-v8 舊工作者，注入失效滑桿 JS 與舊 CSS 後升級：舊快取移除、17 個 JS 及 CSS 使用 hash；音樂／音效按鈕可切換，滑桿 10%／95% 對應增益 0.05／0.57；離線重新載入保留音量。82 項測試通過，雜湊核對通過。 |
 | 圖標：SVG、PNG 192／512、maskable、apple-touch、favicon.ico | ✅ | `node tools/build-icons.mjs` |
 | OG／Twitter 分享標籤與 1200×630 分享圖 | ✅ | index.html；icons/og-image.png |
-| CNAME：starward-bastion.yustellar.dev | ✅ | CNAME |
+| CNAME：starwardbastion.ysgs.app | ✅ | CNAME |
 | 四語介面與 `?lang=zh/en/ja/ko` 原地切換 | 通過 | Chromium 實測四語 HUD、敵人提示、音訊標籤、移塔、結果及分享卡；切換與上一頁／下一頁保留相同 App／Game／Clock／Audio、選塔／移塔、資源與 tick，導覽載入次數保持 1。啟動時注入 zh-TW／ja-JP／ko-KR／fr-FR 偏好，確認自動選語言、英文回退及有效網址優先；保留其他參數與錨點。87 項 Node 測試通過，含語系優先序、鍵與插值參數完整性。 |
 | 四語版面與分享卡 | 通過 | 四語 × 四視口 × 19 呈現狀態，共 304 項無內部溢出；另驗證 20 張地圖 × 四語的 80 組 HUD。包含全部 12 種塔的放置資訊、T05 已建造／移動、真實失敗局及勝利快照呈現（本次未重新打一場勝利局）。四語各實際下載 1200×675 PNG，畫布摘要皆不同、原始快照不變；注入 PNG 編碼失敗後切換語言，錯誤訊息同步更新且可重試。 |
 | 多語系 SEO 與離線更新 | 通過 | HTTP 取得 `sitemap.xml` 並以 XML parser 驗證 5 個網址、每個網址 5 組互相對應 hreflang；`robots.txt` Sitemap 指向正確，MIME 為 XML／純文字。瀏覽器核對 canonical、OG locale、5 組 HTML alternate。先保留 sb-8d593be99631125e 舊工作者與快取再升級；最終 sb-43c7836fe72ce2c1 啟用且舊快取移除，離線重載與切語言可用。22 個 JS/CSS 雜湊核對通過。不執行 JS 的爬蟲仍讀取預設繁中分享標籤。 |

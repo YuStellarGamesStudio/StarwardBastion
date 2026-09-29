@@ -79,6 +79,6 @@ node tools/serve.mjs     # 本機伺服器 http://localhost:8080
 
 ## Git
 
-- 儲存庫：`https://github.com/YueyuHoshizora/StarwardBastion.git`，分支為 `main`。
+- 儲存庫：`https://github.com/YuStellarGamesStudio/StarwardBastion.git`，分支為 `main`。
 - **依任務分次提交，不要一次提交一大包檔案**：每完成一項獨立任務（一個模組、一份文件、一個修正）就提交一次，提交訊息使用繁體中文，並推送到 `origin`。
 - 授權條款為 AGPL-3.0（見 `LICENSE`）。
